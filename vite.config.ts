@@ -10,5 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "Wendy-wyt.github.io",
+  base: "/Wendy-wyt.github.io",
 });

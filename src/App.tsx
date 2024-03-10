@@ -1,19 +1,25 @@
-import { buttonVariants } from "./components/ui/button";
+import { useState } from 'react';
+import { BrowseOptions } from './constants/browse_options';
+import { Navigation } from './components/navigation';
+import { Sections } from './components/sections';
 
 function App() {
+  const [browseOption, setBrowseOption] = useState(BrowseOptions.MAIN);
+
+  const handleNavigation = (data: BrowseOptions) => {
+    setBrowseOption(data);
+  }
+
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen space-y-20">
-      <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-        Vite, React, Tailwind minimal starter
-      </h1>
-      <a
-        href="https://github.com/moinulmoin/vite-react-tailwind-starter"
-        target="_blank"
-        rel="noreferrer"
-        className={buttonVariants()}
-      >
-        <span className="text-lg hover:underline underline-offset-2">Star on GitHub</span>
-      </a>
+    <main>
+      <div className='w-screen h-screen flex flex-row relative'>
+        <div className='w-fit h-full'>
+          <Navigation browseOption={browseOption} handleNavigation={handleNavigation} />
+        </div>
+        <div className='grow h-full overflow-auto'>
+          <Sections browseOption={browseOption} />
+        </div>
+      </div>
     </main>
   );
 }
