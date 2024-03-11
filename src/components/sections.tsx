@@ -1,6 +1,10 @@
 import { BrowseOptions } from '../constants/browse_options';
 
-export const Sections = ({ browseOption }) => {
+type Props = {
+    browseOption: BrowseOptions,
+}
+
+export const Sections = ({ browseOption }: Props) => {
     return (
         <div className="section">
             <div className='w-full h-fit'>

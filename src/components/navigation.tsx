@@ -1,6 +1,11 @@
 import { BrowseOptions } from '../constants/browse_options';
 
-export const Navigation = ({ browseOption, handleNavigation }) => {
+type Props = {
+    browseOption: BrowseOptions,
+    handleNavigation: (data: BrowseOptions) => void,
+}
+
+export const Navigation = ({ browseOption, handleNavigation }: Props) => {
 
     return (
         <div className="navigation">
