@@ -3,6 +3,9 @@
         "name":"Amazon Web Service"
     },
     {
+        "name":"AWS Certified Cloud Practitioner"
+    },
+    {
         "name":"Google Cloud Platform"
     },
     {
@@ -28,6 +31,12 @@
     },
     {
         "name":"React.js / Angular.js / Redux.js / Recoil.js"
+    },
+    {
+        "name":"WordPress"
+    },
+    {
+        "name":"Figma"
     },
     {
         "name":"Node.js / Express.js"
