@@ -1,0 +1,62 @@
+[
+    {
+        "name":"Amazon Web Service"
+    },
+    {
+        "name":"AWS Certified Cloud Practitioner"
+    },
+    {
+        "name":"Google Cloud Platform"
+    },
+    {
+        "name":"Microsoft Azure"
+    },
+    {
+        "name":"Docker / Kubernetes"
+    },
+    {
+        "name":"Github Actions / Jenkins"
+    },
+    {
+        "name":"Java"
+    },
+    {
+        "name":"JavaScript"
+    },
+    {
+        "name":"Python"
+    },
+    {
+        "name":"C / C++ / C#"
+    },
+    {
+        "name":"React.js / Angular.js / Redux.js / Recoil.js"
+    },
+    {
+        "name":"WordPress"
+    },
+    {
+        "name":"Figma"
+    },
+    {
+        "name":"Node.js / Express.js"
+    },
+    {
+        "name":"Springboot"
+    },
+    {
+        "name":"Bash Scripting"
+    },
+    {
+        "name":"SQL"
+    },
+    {
+        "name":"MySQL / Postgres"
+    },
+    {
+        "name":"NoSQL"
+    },
+    {
+        "name":"Tensorflow"
+    }
+]

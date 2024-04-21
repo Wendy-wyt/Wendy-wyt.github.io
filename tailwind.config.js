@@ -1,77 +1,38 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
-  prefix: "",
+  content: ['./src/**/*.{html,tsx, ts}'],
+  darkMode: 'class',
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        layer1: 'var(--color-layer1)',
+        layout: 'var(--color-layout)',
+        menu_text: 'var(--color-menu-text)',
+        activated_text: 'var(--color-activated-text)',
+        skill_bg: 'var(--color-skill-bg)',
+        skill_text: 'var(--color-skill-text)',
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        'roboto-mono': ['Roboto mono'],
       },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-    },
+      backgroundImage: {
+        map: "url('/contact_map.jpg')",
+        profile: "url('/profile.png')",
+        pitts: "linear-gradient(to bottom, rgba(24, 24, 24, 0) 0%,  rgba(24, 24, 24, 0.3) 80%, rgba(24, 24, 24, 1) 100%), url('/pitts_bg.jpg')",
+        intro: "url('/ski.jpg')",
+        intro_border: 'var(--color-intro)',
+        google_map: "url('/google_map.jpg')",
+        contact: "linear-gradient(145deg, #1C002D 0%, #8F68A7 42%, #AE92BF 74%, #BCBCBC 100%)",
+        avatar: "url('/avatar.jpg')",
+        email_light: "url('/email_light.svg')",
+        linkedin_light: "url('/linkedin_light.svg')",
+        github_light: "url('/github_light.svg')",
+        email_dark: "url('/email_dark.svg')",
+        linkedin_dark: "url('/linkedin_dark.svg')",
+        github_dark: "url('/github_dark.svg')",
+      }
+    }
   },
   plugins: [require("tailwindcss-animate")],
 }
