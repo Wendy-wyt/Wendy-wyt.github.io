@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="flex flex-row space-x-3">
                     <Link className="cursor-pointer" to="https://github.com/Wendy-wyt"><div className="h-5 aspect-square bg-github_light bg-cover"></div></Link>
                     <Link className="cursor-pointer" to="https://www.linkedin.com/in/yuting-wu-0101/"><div className="h-5 aspect-square bg-linkedin_light bg-cover"></div></Link>
-                    <div className="h-5 aspect-square bg-email_light bg-cover"></div>
+                    <Link to="mailto:wytapplication@gmail.com"><div className="h-5 aspect-square bg-email_light bg-cover"></div></Link>
                 </div>
             </div>
         </footer>

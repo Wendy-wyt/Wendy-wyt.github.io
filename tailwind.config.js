@@ -31,6 +31,7 @@ module.exports = {
         email_dark: "url('/email_dark.svg')",
         linkedin_dark: "url('/linkedin_dark.svg')",
         github_dark: "url('/github_dark.svg')",
+        file: "url('/file.svg')",
       }
     }
   },
