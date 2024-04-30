@@ -8,8 +8,11 @@ const Layout: React.FC = () => {
     return (
         <div className='w-full'>
             <Navbar />
-            <Outlet />
-            <Footer />
+            <div className='flex flex-col min-h-screen'>
+                <Outlet />
+                <Footer />
+            </div>
+
         </div>
     );
 };

@@ -31,7 +31,7 @@ export default function Router() {
     });
 
     return (
-        <main className='min-h-screen'>
+        <main className='grow h-full flex flex-col'>
             {
                 curBrowseOption === BrowseOptions.ABOUT && <About />
             }
