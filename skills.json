@@ -1,27 +1,36 @@
 [
     {
-        "name":"Amazon Web Service"
+        "name":"AWS"
     },
     {
-        "name":"AWS Certified Cloud Practitioner"
+        "name":"GCP"
     },
     {
-        "name":"Google Cloud Platform"
+        "name":"Azure"
     },
     {
-        "name":"Microsoft Azure"
+        "name":"Terraform"
     },
     {
-        "name":"Docker / Kubernetes"
+        "name":"AWS SDK for Java / TypeScript"
     },
     {
-        "name":"Github Actions / Jenkins"
+        "name":"AWS CDK for TypeScript"
+    },
+    {
+        "name":"Docker"
+    },
+    {
+        "name":"Kubernetes"
+    },
+    {
+        "name":"GitHub Actions"
+    },
+    {
+        "name":"Jenkins"
     },
     {
         "name":"Java"
-    },
-    {
-        "name":"JavaScript"
     },
     {
         "name":"Python"
@@ -30,7 +39,22 @@
         "name":"C / C++ / C#"
     },
     {
-        "name":"React.js / Angular.js / Redux.js / Recoil.js"
+        "name":".NET"
+    },
+    {
+        "name":"JavaScript"
+    },
+    {
+        "name":"React.js"
+    },
+    {
+        "name":"Angular.js"
+    },
+    {
+        "name":"Redux.js"
+    },
+    {
+        "name":"Recoil.js"
     },
     {
         "name":"WordPress"
@@ -39,7 +63,10 @@
         "name":"Figma"
     },
     {
-        "name":"Node.js / Express.js"
+        "name":"Node.js"
+    },
+    {
+        "name":"MERN"
     },
     {
         "name":"Springboot"
@@ -48,10 +75,19 @@
         "name":"Bash Scripting"
     },
     {
+        "name":"Apache Spark"
+    },
+    {
+        "name":"Scala"
+    },
+    {
         "name":"SQL"
     },
     {
-        "name":"MySQL / Postgres"
+        "name":"Postgres"
+    },
+    {
+        "name":"MySQL"
     },
     {
         "name":"NoSQL"

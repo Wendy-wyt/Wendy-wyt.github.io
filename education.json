@@ -1,0 +1,42 @@
+[
+    {
+        "school": "Carnegie Mellon University",
+        "degree": "Master of Information Systems Management",
+        "major": "Information Technology",
+        "awards": [
+            "Distinction"
+        ],
+        "startDate": "Aug 2022",
+        "endDate": "Dec 2023",
+        "gpa": "3.83 / 4.00",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "courses": [
+            "NoSQL",
+            "Data Warehousing",
+            "Distributed Systems",
+            "E-Commerce Tech",
+            "Cloud Computing",
+            "Web App Development"
+        ]
+    },
+    {
+        "school": "George Washington University",
+        "degree": "Bachelor of Business Administration",
+        "major": "Finance & International Business",
+        "minor": "Mathematics",
+        "awards": [
+            "Magna Cum Laude", 
+            "Dean’s Honor List for 5 semesters"
+        ],
+        "startDate": "Jan 2017",
+        "endDate": "Dec 2020",
+        "gpa": "3.76 / 4.00",
+        "city": "Washington",
+        "state": "DC",
+        "courses": [
+            "Stochastic Calculus In Finance",
+            "Mathmatics Of Finance"
+        ]
+    }
+]
