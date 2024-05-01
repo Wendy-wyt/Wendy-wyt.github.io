@@ -7,7 +7,7 @@ const SkillsBox = () => {
 
     return (
         <div className="w-full flex items-center justify-center my-10">
-            <div className="w-10/12 flex flex-row flex-wrap justify-center">
+            <div className="w-11/12 md:w-10/12 flex flex-row flex-wrap justify-center">
                 {skills.map((skill, index) => skillbutton(skill, index))}
             </div>
         </div>

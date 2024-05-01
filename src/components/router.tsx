@@ -5,6 +5,7 @@ import { BrowseOptions } from "../interfaces/browse_options";
 import { useRecoilState } from "recoil";
 import About from "@/pages/about/about";
 import Resume from "@/pages/resume/resume";
+import Education from "@/pages/education/education";
 
 export default function Router() {
     const { param } = useParams();
@@ -13,6 +14,9 @@ export default function Router() {
 
     useEffect(() => {
         switch (param) {
+            case BrowseOptions.EDUCATION:
+                setCurBrowseOption(BrowseOptions.EDUCATION);
+                break;
             case BrowseOptions.PROJECTS:
                 setCurBrowseOption(BrowseOptions.PROJECTS);
                 break;
@@ -31,9 +35,12 @@ export default function Router() {
     });
 
     return (
-        <main className='grow h-full flex flex-col'>
+        <main className='grow h-full w-full flex flex-col'>
             {
                 curBrowseOption === BrowseOptions.ABOUT && <About />
+            }
+            {
+                curBrowseOption === BrowseOptions.EDUCATION && <Education />
             }
             {
                 curBrowseOption === BrowseOptions.RESUME && <Resume />

@@ -1,9 +1,9 @@
-export interface allEducation {
-    allEducations: education[],
-}
-
-export interface education {
+export interface EducationDto {
     school: string,
+    degree: string,
+    major: string,
+    minor?: string,
+    awards: string[],
     startDate: string,
     endDate: string,
     gpa: string,

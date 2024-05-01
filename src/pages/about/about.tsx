@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import Feature from "./components/feature"
 import Intro from "./components/self-intro"
 import SkillsBox from "./components/skillbox"
-import readFile from "@/lib/readFile"
+import { readSkills } from "@/lib/readFile"
 import { useRecoilState } from "recoil"
 import { navbarTransparentAtom, skillsAtom } from "@/recoil/atoms/atoms"
 import Contact from "./components/contact"
@@ -13,7 +13,7 @@ const About = () => {
     const [, setNavbarTransparent] = useRecoilState(navbarTransparentAtom);
 
     useEffect(() => {
-        readFile(filePath).then((res) => {
+        readSkills(filePath).then((res) => {
             setSkills(res);
         });
     }, []);
