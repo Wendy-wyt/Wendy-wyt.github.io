@@ -1,0 +1,93 @@
+[
+    {
+        "company": "Ra Labs",
+        "role": "Software Engineer Intern",
+        "city": "Jersey City",
+        "state": "NJ",
+        "startDate": "Feb 2024",
+        "endDate": "Present",
+        "duties": [
+            "Collaborating with UI designers to quickly iterate design for the AI-powered application that extracts actionable business insights from complex datasets, resulting in 10+ frontend issues fixed and two new features implemented",
+            "Migrated production environment from single EC2 instance to AWS EKS provisioned with Terraform and updated CI/CD pipelines with GitHub Actions, achieving scalability and reducing failure rate by 50%",
+            "Reconstructed test environment and modified DNS record within 48 hours to address the shortage of memory issue"
+        ],
+        "topSkills": [
+            "CI/CD",
+            "Kubernetes",
+            "Docker",
+            "Terraform",
+            "ReactJS"
+        ]
+    },
+    {
+        "company": "Koppers Holdings",
+        "role": "Project Manager",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "startDate": "Aug 2023",
+        "endDate": "Dec 2023",
+        "duties": [
+            "Built a web application using Django to improve accessibility and upgraded algorithms to generate optimal loading solutions, saving 60% of calculation time on average and resulting in the $800 acquisition of the software",
+            "Led a 4-member team, communicated with clients about software specifications and technical details, and adopted agile methods to divide tasks into two-week sprints, culminating in an 80% client satisfaction rate"
+        ],
+        "topSkills": [
+            "Project Management",
+            "Python",
+            "Django",
+            "Agile"
+        ]
+    },
+    {
+        "company": "Carnegie Mellon University",
+        "role": "Teaching Assistant",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "startDate": "Aug 2023",
+        "endDate": "Oct 2023",
+        "duties": [
+            "Immediate Database Management"
+        ],
+        "topSkills": [
+            "Communications",
+            "Relational Database",
+            "SQL"
+        ]
+    },
+    {
+        "company": "Ra Labs",
+        "role": "Software Engineer Intern",
+        "city": "Jersey City",
+        "state": "NJ",
+        "startDate": "May 2023",
+        "endDate": "Aug 2023",
+        "duties": [
+            "Developed a web application of a decentralized data trading platform using Typescript and Next.js in an agile environment, enabling users to interact to view listings stored on blockchain and transactions data",
+            "Designed backend database using PostgreSQL for miscellaneous information, reducing data transaction costs by 20%",
+            "Reproduced 80% of the UI design with Semantic UI and Tailwind CSS",
+            "Collaborated with smart-contract engineers, connected to graph protocol, queried data on Blockchain through GraphQL requests sent with Axios.js, reducing processing time by 15%"
+        ],
+        "topSkills": [
+            "ReactJS",
+            "JavaScript/TypeScript",
+            "TailwindCSS"
+        ]
+    },
+    {
+        "company": "Cocoyoo Agency (Wahool)",
+        "role": "Social Media Influencer Coordinator",
+        "city": "Brooklyn",
+        "state": "NY",
+        "startDate": "May 2021",
+        "endDate": "Mar 2022",
+        "duties": [
+            "Performed data cleaning, created a dashboard, and analyzed data with a dataset of 300+ records using spreadsheet, and presented weekly reports on 8 key indicators to assist strategic planning",
+            "Initiated a project with 500+ records to profile customers to enhance collaboration and increased sign-up rate by 20%",
+            "Identified and targeted potential clients on social media platforms by analyzing data to increase client base by 100%"
+        ],
+        "topSkills": [
+            "Communications",
+            "Data Analysis",
+            "Marketing"
+        ]
+    }
+]

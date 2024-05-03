@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="w-full h-content flex items-center justify-center mt-10 mb-16">
             <div className="w-full h-[280px] md:w-[800px] md:h-[180px] bg-google_map bg-center bg-no-repeat bg-cover rounded-lg relative">
-                <div className="h-content md:h-[180px] bg-contact rounded-lg absolute top-10 inset-x-10 px-10 py-5 md:py-0">
+                <div className="h-content md:h-[180px] bg-contact rounded-lg absolute top-10 inset-x-10 px-10 py-5 md:py-0 drop-shadow-sm">
                     <div className="flex flex-col md:flex-row h-full w-full items-center space-x-0 md:space-x-40 justify-center">
                         <div className="h-[100px] md:h-[140px] aspect-square rounded-full bg-avatar bg-center bg-cover"></div>
                         <div className="w-fit text-nowrap flex flex-col space-y-3">

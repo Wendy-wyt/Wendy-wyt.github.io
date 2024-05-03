@@ -16,7 +16,7 @@ const Education = () => {
 
     const renderEducation = (edu: EducationDto, index: number) => (
         <div key={index}
-            className="w-10/12 flex flex-col p-3 md:p-7 rounded-xl bg-intro_border font-mono text-lg m-10">
+            className="w-10/12 flex flex-col p-3 md:p-7 rounded-xl bg-intro_border font-mono text-sm md:text-lg m-10 drop-shadow-sm">
             <div className="flex flex-col md:flex-row justify-between text-xl mb-3">
                 <p className="font-semibold ">{edu.school}</p>
                 <p>{edu.startDate} - {edu.endDate}</p>
@@ -25,7 +25,7 @@ const Education = () => {
                 <p className="italic">{edu.degree}</p>
                 <p>{edu.city}, {edu.state}</p>
             </div>
-            <ol className="list-disc list-inside">
+            <ol className="list-disc list-inside space-y-2">
                 <li>{edu.gpa}</li>
                 <li>{edu.awards.join(", ")}</li>
                 <li><strong>Major: </strong> {edu.major}</li>

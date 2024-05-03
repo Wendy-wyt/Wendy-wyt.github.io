@@ -2,6 +2,7 @@ import { atom } from 'recoil';
 import { BrowseOptions } from '@/interfaces/browse_options';
 import { SkillDto } from '@/interfaces/skills';
 import { EducationDto } from '@/interfaces/education';
+import { WorkExperienceDto } from '@/interfaces/work_experience';
 
 export const browseAtom = atom({
     key: 'browseAtom',
@@ -22,3 +23,8 @@ export const allEducationAtom = atom({
     key: 'allEducationAtom',
     default: [] as EducationDto[],
 });
+
+export const allWorkExperienceAtom = atom({
+    key: 'allWorkExperienceAtom',
+    default: [] as WorkExperienceDto[],
+})

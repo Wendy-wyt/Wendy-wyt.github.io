@@ -33,6 +33,10 @@ module.exports = {
         github_dark: "url('/github_dark.svg')",
         file: "url('/file.svg')",
         menu: "url('/menu.svg')",
+      },
+      dropShadow: {
+        sm: "0 2px 2px rgba(255,255,255,0.5)",
+        md: "0 5px 5px rgba(255,255,255,0.5)",
       }
     }
   },

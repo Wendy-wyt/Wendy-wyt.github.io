@@ -1,13 +1,27 @@
 import { Link } from "react-router-dom"
-import { useRecoilValue } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import { browseAtom, navbarTransparentAtom } from "@/recoil/atoms/atoms";
 import { BrowseOptions } from "@/interfaces/browse_options";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
     const curBrowseOption = useRecoilValue(browseAtom);
-    const navbarTransparent = useRecoilValue(navbarTransparentAtom);
     const [menuOn, setMenuOn] = useState(false);
+    const [navbarTransparent, setNavbarTransparent] = useRecoilState(navbarTransparentAtom);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY === 0) {
+                setNavbarTransparent(true);
+            } else {
+                setNavbarTransparent(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <>
@@ -21,8 +35,8 @@ const Navbar = () => {
                         <Link to='/' className={`${curBrowseOption === BrowseOptions.ABOUT && 'text-activated_text'} pl-2`}
                             onClick={() => setMenuOn(false)}>About</Link>
                         <Link to='education' className={`${curBrowseOption === BrowseOptions.EDUCATION && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Education</Link>
-                        {/* <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Projects</Link>
-                        <Link to='work_experience' className={`${curBrowseOption === BrowseOptions.WORK_EXPERIENCE && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Work Experience</Link> */}
+                        {/* <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Projects</Link> */}
+                        <Link to='work_experience' className={`${curBrowseOption === BrowseOptions.WORK_EXPERIENCE && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Work Experience</Link>
                         <Link to='resume' className={`${curBrowseOption === BrowseOptions.RESUME && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Resume</Link>
                     </div>
                     <div className="grow" onClick={() => { setMenuOn(false) }}></div>
@@ -34,8 +48,8 @@ const Navbar = () => {
                     <div className="sections hidden md:flex flex-row space-x-6 lg:space-x-12">
                         <Link to='/' className={`${curBrowseOption === BrowseOptions.ABOUT && 'text-activated_text'}`}>About</Link>
                         <Link to='education' className={`${curBrowseOption === BrowseOptions.EDUCATION && 'text-activated_text'}`}>Education</Link>
-                        {/* <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'}`}>Projects</Link>
-                        <Link to='work_experience' className={`${curBrowseOption === BrowseOptions.WORK_EXPERIENCE && 'text-activated_text'}`}>Work Experience</Link> */}
+                        {/* <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'}`}>Projects</Link> */}
+                        <Link to='work_experience' className={`${curBrowseOption === BrowseOptions.WORK_EXPERIENCE && 'text-activated_text'}`}>Work Experience</Link>
                         <Link to='resume' className={`${curBrowseOption === BrowseOptions.RESUME && 'text-activated_text'}`}>Resume</Link>
                     </div>
                     <div className="menu block md:hidden h-10 aspect-square bg-menu bg-contain bg-center mx-3"

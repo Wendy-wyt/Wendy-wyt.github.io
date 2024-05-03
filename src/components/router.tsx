@@ -6,6 +6,7 @@ import { useRecoilState } from "recoil";
 import About from "@/pages/about/about";
 import Resume from "@/pages/resume/resume";
 import Education from "@/pages/education/education";
+import WorkExperience from "@/pages/work_experience/work_experience";
 
 export default function Router() {
     const { param } = useParams();
@@ -36,6 +37,9 @@ export default function Router() {
 
     return (
         <main className='grow h-full w-full flex flex-col'>
+            {
+                curBrowseOption === BrowseOptions.WORK_EXPERIENCE && <WorkExperience />
+            }
             {
                 curBrowseOption === BrowseOptions.ABOUT && <About />
             }
