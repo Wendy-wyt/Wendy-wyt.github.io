@@ -55,7 +55,7 @@ export function FilterButton() {
                         onClick={() => handleDelete(filter)}
                     >
                         {filter}
-                        <span className="ml-1 h-4 w-4 bg-cancel_light bg-cover bg-center"
+                        <span className="ml-1 h-4 w-4 bg-cancel_dark bg-cover bg-center"
                         ></span>
                     </button>)
                 }
