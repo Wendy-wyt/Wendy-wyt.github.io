@@ -20,7 +20,7 @@ input::-ms-reveal {
     --color-menu-text: #D2D2D2;
     --color-activated-text: #FFFFFF;
     --color-layout: #0f0f0f;
-    --color-layer2: rgba(28, 0, 45, 1);
+    --color-layer2: #d2d2d2;
     --color-feature: linear-gradient(0deg, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, 1) 80%, rgba(24, 24, 24, 1) 100%);
     --color-intro: linear-gradient(to right bottom, rgba(141, 112, 158, 1), rgba(242, 213, 110, 1));
     --color-skill-bg: #E0AFFF;

@@ -35,7 +35,7 @@ const Navbar = () => {
                         <Link to='/' className={`${curBrowseOption === BrowseOptions.ABOUT && 'text-activated_text'} pl-2`}
                             onClick={() => setMenuOn(false)}>About</Link>
                         <Link to='education' className={`${curBrowseOption === BrowseOptions.EDUCATION && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Education</Link>
-                        {/* <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Projects</Link> */}
+                        <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Projects</Link>
                         <Link to='work_experience' className={`${curBrowseOption === BrowseOptions.WORK_EXPERIENCE && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Work Experience</Link>
                         <Link to='resume' className={`${curBrowseOption === BrowseOptions.RESUME && 'text-activated_text'} pl-2`} onClick={() => setMenuOn(false)}>Resume</Link>
                     </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
                     <div className="sections hidden md:flex flex-row space-x-6 lg:space-x-12">
                         <Link to='/' className={`${curBrowseOption === BrowseOptions.ABOUT && 'text-activated_text'}`}>About</Link>
                         <Link to='education' className={`${curBrowseOption === BrowseOptions.EDUCATION && 'text-activated_text'}`}>Education</Link>
-                        {/* <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'}`}>Projects</Link> */}
+                        <Link to='projects' className={`${curBrowseOption === BrowseOptions.PROJECTS && 'text-activated_text'}`}>Projects</Link>
                         <Link to='work_experience' className={`${curBrowseOption === BrowseOptions.WORK_EXPERIENCE && 'text-activated_text'}`}>Work Experience</Link>
                         <Link to='resume' className={`${curBrowseOption === BrowseOptions.RESUME && 'text-activated_text'}`}>Resume</Link>
                     </div>

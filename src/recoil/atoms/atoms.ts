@@ -3,6 +3,7 @@ import { BrowseOptions } from '@/interfaces/browse_options';
 import { SkillDto } from '@/interfaces/skills';
 import { EducationDto } from '@/interfaces/education';
 import { WorkExperienceDto } from '@/interfaces/work_experience';
+import { ProjectDto, ProjectType } from '@/interfaces/project';
 
 export const browseAtom = atom({
     key: 'browseAtom',
@@ -27,4 +28,14 @@ export const allEducationAtom = atom({
 export const allWorkExperienceAtom = atom({
     key: 'allWorkExperienceAtom',
     default: [] as WorkExperienceDto[],
+})
+
+export const projectsAtom = atom({
+    key: 'projectsAtom',
+    default: [] as ProjectDto[],
+})
+
+export const filtersAtom = atom({
+    key: 'filtersAtom',
+    default: [] as ProjectType[],
 })

@@ -7,6 +7,7 @@ import About from "@/pages/about/about";
 import Resume from "@/pages/resume/resume";
 import Education from "@/pages/education/education";
 import WorkExperience from "@/pages/work_experience/work_experience";
+import Projects from "@/pages/projects/projects";
 
 export default function Router() {
     const { param } = useParams();
@@ -48,6 +49,9 @@ export default function Router() {
             }
             {
                 curBrowseOption === BrowseOptions.RESUME && <Resume />
+            }
+            {
+                curBrowseOption === BrowseOptions.PROJECTS && <Projects />
             }
         </main>
     )

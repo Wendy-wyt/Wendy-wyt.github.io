@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         layer1: 'var(--color-layer1)',
+        layer2: 'var(--color-layer2)',
         layout: 'var(--color-layout)',
         menu_text: 'var(--color-menu-text)',
         activated_text: 'var(--color-activated-text)',
@@ -33,6 +34,8 @@ module.exports = {
         github_dark: "url('/github_dark.svg')",
         file: "url('/file.svg')",
         menu: "url('/menu.svg')",
+        link: "url(/link.svg)",
+        cancel_light: "url('/cancel_light.svg')",
       },
       dropShadow: {
         sm: "0 2px 2px rgba(255,255,255,0.5)",

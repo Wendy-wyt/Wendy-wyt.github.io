@@ -1,0 +1,34 @@
+[
+    {
+        "featurePhoto": "https://s3-alpha.figma.com/hub/file/4711603543/c35e3e9b-7203-4f50-9425-c850336a2e7b-cover.png",
+        "title": "Mini Netflix [MERN]",
+        "brief": "Netflix-like web application for video playing and filtering with user authentication",
+        "type": [
+            "Front End",
+            "Back End"
+        ],
+        "accomplishements": [
+            "Frontend: React.js, HTML, and SCSS",
+            "Backend: Express.js and MongoDB ",
+            "Responsive user interface",
+            "Authentication with JWT"
+        ],
+        "demo": "",
+        "codeUrl": "https://github.com/Wendy-wyt/netflix-web-app"
+    },
+    {
+        "featurePhoto": "/personalWebsite.png",
+        "title": "Personal Website",
+        "brief": "It is a website hosted on GitHub to display details of my professional experience.",
+        "type": [
+            "Front End"
+        ],
+        "accomplishements": [
+            "Responsive design",
+            "Used Figma to standardize UI design",
+            "ReactJS and Tailwind"
+        ],
+        "demo": "https://wendy-wyt.github.io/",
+        "codeUrl": "https://github.com/Wendy-wyt/Wendy-wyt.github.io"
+    }
+]

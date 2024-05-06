@@ -1,4 +1,5 @@
 import { EducationDto } from "@/interfaces/education";
+import { ProjectDto } from "@/interfaces/project";
 import { SkillDto } from "@/interfaces/skills";
 import { WorkExperienceDto } from "@/interfaces/work_experience";
 
@@ -21,4 +22,11 @@ export const readAllWorkExperience = async (filePath: string): Promise<WorkExper
         return res.json();
     });
     return allWorkExperience;
+}
+
+export const readProjects = async (filePath: string): Promise<ProjectDto[]> => {
+    const projects = await fetch(filePath).then((res) => {
+        return res.json();
+    });
+    return projects;
 }
