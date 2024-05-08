@@ -1,7 +1,7 @@
 [
     {
-        "featurePhoto": "https://s3-alpha.figma.com/hub/file/4711603543/c35e3e9b-7203-4f50-9425-c850336a2e7b-cover.png",
         "title": "Mini Netflix [MERN]",
+        "featurePhoto": "https://s3-alpha.figma.com/hub/file/4711603543/c35e3e9b-7203-4f50-9425-c850336a2e7b-cover.png",
         "brief": "Netflix-like web application for video playing and filtering with user authentication",
         "type": [
             "Front End",
@@ -13,12 +13,14 @@
             "Responsive user interface",
             "Authentication with JWT"
         ],
-        "demo": "",
+        "demo": {
+            "video": "/projects/netflix-demo.mp4"
+        },
         "codeUrl": "https://github.com/Wendy-wyt/netflix-web-app"
     },
     {
-        "featurePhoto": "/personalWebsite.png",
         "title": "Personal Website",
+        "featurePhoto": "/personalWebsite.png",
         "brief": "It is a website hosted on GitHub to display details of my professional experience.",
         "type": [
             "Front End"
@@ -28,7 +30,57 @@
             "Used Figma to standardize UI design",
             "ReactJS and Tailwind"
         ],
-        "demo": "https://wendy-wyt.github.io/",
+        "demo": {
+            "url": "https://wendy-wyt.github.io/"
+        },
         "codeUrl": "https://github.com/Wendy-wyt/Wendy-wyt.github.io"
+    },
+    {
+        "title": "File Upload System [Cloud Native]",
+        "featurePhoto": "/projects/file-system.png",
+        "brief": "A serverless file uploading system that appends inputs to files uploaded",
+        "type": [
+            "Back End",
+            "Dev Ops"
+        ],
+        "accomplishements": [
+            "Used DynamoDB and DynamoDB streams to trigger Lambda functions", 
+            "Created and terminated EC2 instances with Lambda functions",
+            "Set up API Gateway to accept requests",
+            "Automated resource provisioning by building a multi-stack AWS CDK application"
+        ],
+        "demo": {
+            "video": "/projects/file-storage-demo.mp4"
+        }
+    },
+    {
+        "title": "Twitter Analytics Web Service",
+        "featurePhoto": "https://static.vecteezy.com/system/resources/previews/027/153/580/non_2x/twitter-logo-of-new-style-and-original-style-social-media-and-popular-news-with-people-connected-by-internet-global-networks-free-vector.jpg",
+        "brief": "A service to recommend users based on interaction, keywords, and hashtags",
+        "type": [
+            "Back End",
+            "Data Engineering",
+            "Dev Ops",
+            "Cloud"
+        ],
+        "accomplishements": [
+            "Used Java Spring framework",
+            "Increased throughputs from 10000 requests per second (RPS) to 30000 RPS",
+            "Designed ETL pipeline with Spark to process over 1.4TB raw tweet data",
+            "Provisioned AWS EKS, ELB, and AWS RDS for MySQL using Terraform and managed EKS using Kubernetes API"
+        ]
+    },
+    {
+        "title": "Task API with Next.js",
+        "featurePhoto": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png",
+        "brief": "An API that handles CRUD actions of task objects in MongoDB",
+        "type": [
+            "Back End"
+        ],
+        "accomplishements": [
+            "Connected MongoDB and handled CRUD requests",
+            "Implemented comprehensive unit tests and integration tests with Jest"
+        ],
+        "codeUrl": "https://github.com/Wendy-wyt/typescript-starter"
     }
 ]
