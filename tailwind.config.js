@@ -36,6 +36,8 @@ module.exports = {
         menu: "url('/menu.svg')",
         link: "url(/link.svg)",
         cancel_dark: "url('/cancel_dark.svg')",
+        cancel_light: "url('/cancel_light.svg')",
+        player_dark: "url('/player_dark.svg')",
       },
       dropShadow: {
         sm: "0 2px 2px rgba(255,255,255,0.5)",

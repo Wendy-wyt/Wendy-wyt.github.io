@@ -5,10 +5,11 @@ import { useState } from "react"
 import { Link } from "react-router-dom";
 
 interface CardProps {
-    project: ProjectDto
+    project: ProjectDto,
+    handleOpenVideo: (video: string) => void
 }
 
-export default function Card({ project }: CardProps) {
+export default function Card({ project, handleOpenVideo }: CardProps) {
     const [active, setActive] = useState(false);
 
     return (
@@ -23,11 +24,18 @@ export default function Card({ project }: CardProps) {
                         </ul>
                         <div className="absolute bottom-0 px-3 py-5 space-x-5 flex flex-row justify-center">
                             {
-                                project.demo && <Link to={project.demo}>
+                                (project.demo && project.demo.url) && <Link to={project.demo.url}>
                                     <div className="h-[40px] aspect-square bg-stone-400 rounded-full p-2">
                                         <div className="h-full bg-link bg-cover bg-center"></div>
                                     </div>
                                 </Link>
+                            }
+                            {
+                                project.demo && project.demo.video &&
+                                <div className="h-[40px] aspect-square bg-stone-400 rounded-full p-2"
+                                    onClick={() => handleOpenVideo(project.demo ? project.demo.video ?? "" : "")} >
+                                    <div className="h-full bg-player_dark bg-cover bg-center"></div>
+                                </div>
                             }
                             {
                                 project.codeUrl && <Link to={project.codeUrl}>
@@ -42,9 +50,9 @@ export default function Card({ project }: CardProps) {
                     <img src={project.featurePhoto} alt="" className="w-full h-1/2 object-cover object-center" />
                     <div className="text-black m-3 space-y-3">
                         <p className="text-xl font-semibold">{project.title}</p>
-                        <div className="flex flex-row flex-wrap space-x-2">
+                        <div className="flex flex-row flex-wrap">
                             {project.type.map((type, index) => <div key={index}
-                                className="text-neutral-600 text-xs bg-neutral-200 rounded-full py-1 px-2">
+                                className="text-neutral-600 text-xs bg-neutral-200 rounded-full py-1 px-2 m-1">
                                 {type}
                             </div>)}
                         </div>

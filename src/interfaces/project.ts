@@ -4,8 +4,13 @@ export interface ProjectDto {
     brief: string;
     type: ProjectType[];
     accomplishements: string[];
-    demo: string | undefined;
-    codeUrl: string | undefined;
+    demo?: DemoDto;
+    codeUrl?: string;
+}
+
+export interface DemoDto {
+    video?: string;
+    url?: string;
 }
 
 export enum ProjectType {
