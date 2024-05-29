@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-push-image:
-    if: contains(fromJson('["PushEvent"]'), github.event.type)
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
