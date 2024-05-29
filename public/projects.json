@@ -51,7 +51,8 @@
         ],
         "demo": {
             "video": "/projects/file-storage-demo.mp4"
-        }
+        },
+        "codeUrl": "https://github.com/Wendy-wyt/cloud-native-file-system"
     },
     {
         "title": "Twitter Analytics Web Service",
